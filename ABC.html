@@ -1,0 +1,47 @@
+<title>About Blank Cloaker</title>
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <head>
+    </head>
+    <body>
+      <center>
+        <script>
+        function create() {
+            var url = document.getElementById('input').value;
+            var win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = "https://" + url;
+            win.document.body.appendChild(iframe);
+        }
+        </script>
+        <input type="text" value="(Enter URL Here)" placeholder="https://example.com" id='input' autofocus>
+      </center><center><button onclick='create()'>Open in about:blank (Use this button if the url does not have https://)</button></center><center>
+                  <button onclick='create2()'>Open in about:blank (Use this button if the url has https://)</button>
+                  <script>
+        function create2() {
+            var url = document.getElementById('input').value;
+            var win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+        }
+        </script>
+
+
+      </center><center>
+      <a href="index.html" class="button">Return to main page</a>
+    </body></center>
+</html>

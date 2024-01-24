@@ -2,15 +2,15 @@ body {
   background: black;
 }
 p {
-  font-family: verdana;
+  font-family: monospace;
+  color: #ffffff;
   font-size: 40px;
-  color: #ffffff
 }
 
 h1 {
   font-family: monospace;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 40px;
 }
 
 .button {

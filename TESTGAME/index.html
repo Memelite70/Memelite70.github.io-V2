@@ -5,7 +5,13 @@
     	<p>MotoX3M</p>         
 	    <button class="button" onclick="openFullscreen();"> Full Screen </button>
 
-
+<style>
+	#redirect {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+    }
+</style>
 		       
 	       
 	
@@ -27,7 +33,7 @@
         <input type="hidden" value=gameframe.html placeholder="https://lsmdm.tk" id='input' autofocus>
         <button class="button" onclick='create()'>Open Cloaked</button></div>
      
-<button class="button" onclick="goToHomePage()">Go to Homepage</button>
+<button id="redirect" style="width: 100px; height: 100px;" class="button" onclick="goToHomePage()"><image src="home.png"></image></button>
 
 <script>
 function goToHomePage() {

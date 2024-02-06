@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Youtube</title>
+    <link rel="shortcut icon" type="image/jpg" 
+    href="youtube.png"/>
+  </head>
+<body onload='focus()'>
+<style>
+html, body{
+width: 100%;
+height: 100%;
+}
+</style>
+<script src="load.js"></script>
+<a href="/" style='font-size: 2vw;'>Back To Home Page</a>
+     
+<br>
+<div id='servers'>
+
+</div>
+
+<h3>Playing On Server: <span id='currentServer'></span></h3>
+
+<iframe style='height: 95vh; width: 95vw;' frameborder="0" id="518929564" allowtransparency="true" 
+        src=""></iframe>
+<br>
+<script>
+document.getElementById('518929564').src='https://ytmous.herokuapp.com/';
+document.getElementById('currentServer').innerHTML = '1';
+
+const links = ['https://jeodezz.datemyfamily.tv/cec50037a0b9422baca27388571b69c8/_rhs946bP://56qf5RZ-R6RyCVGV~.IZN~Z~vTzvzTTleui.8Kl/uJmM7aa/2Yt?5BX=946bP://zz838eNLveomTlvl7mMl2KsYWYYW.vj3iJ8s.JJjhiqOQal.l9F/5rXk2S4/O/~zAAoEZ3TN8umTTmjvmKi77sxhS2/HeLNM/mu.hMM', 
+
+'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://218463058-163927403382736103.preview.editmysite.com/uploads/b/139890129-297434511671085883/files/mm.xml',
+
+'https://igetzerogirls.datemyfamily.tv/ad97416f7e23431bbf273b85510514df/_rhs0ZgaW://LgUxLY8cYgYfQF2FA.S8TA8Aq9-q-99P7kh.sMP/kjO5BRR/zuD?LIp=0ZgaW://--s4s7TGq7XO9PqPBO5PzMHuouuo.q34hjsH.jj3rhUbyRP.P0n/LipVzCZ/b/A-11XK849TskO99O3qOMhBBHvrCz/E7GT5/Ok.r55',
+
+'https://slothyinity.datemyfamily.tv/50f0ddd5f73d40088417e8bd186e15dd/_rhsONYIi://3Yf732xK2Y2A5PuPb.FxMbxbZseZessardH.jya/dEc1RVV/v6w?3mX=ONYIi://eejLjrM8ZrgcsaZaRc1avyl60660.Z~LHEjl.EE~4HfUJVa.aOh/3QXTvBN/U/beqqgGxLsMjdcssc~ZcyHRRlk4Bv/pr8M1/cd.411' ];
+
+links.forEach(server);
+
+function server(item, index) {
+window[("s"+(index+1))] = function(){
+document.getElementById('518929564').src= item;
+document.getElementById('currentServer').innerHTML = (index+1);
+document.getElementById('518929564').focus();
+ }
+document.getElementById('servers').innerHTML += "<button style='font-size: 1vw;' onclick="+("s"+(index+1))+"()>Server "+(index+1)+"</button>";
+}
+</script>
+<script src="fullScreen.js"></script>
+<script>
+function focus() {document.getElementById('518929564').focus();}
+</script>
+</body>
+</html>

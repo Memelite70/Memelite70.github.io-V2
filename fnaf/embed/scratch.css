@@ -345,15 +345,15 @@ body,
 }
 
 #loading-progress {
-  border: 1px solid #00ffff;
+  border: 1px solid #fcfcfc;
 }
 
 #loading-progress::before {
-  color: #00ffff;
+  color: #030303;
 }
 
 #loading-progress::after {
-  background-color: #00ffff;
+  background-color: #fcfcfc;
 }
 
 .monitor {

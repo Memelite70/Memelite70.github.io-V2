@@ -378,11 +378,26 @@
       <a href="fnaf5/index.html">
   <img src="fnaf5/fnaf5.png" alt="Logo" style="width: 100px; height: 100px;" />
 </a>
-      <a href="quake/index.html">
-  <img src="quake.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
+                 <script>
+        function create() {
+            var url = document.getElementById('input').value;
+            var win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+        }
+        </script>
+         <a>           
+        <input type="hidden" value=https://unique-mousse-210b28.netlify.app/quake/index.html placeholder="https://lsmdm.tk" id='input' autofocus>
+        <button class="button" onclick='create()'><img src="quake.png" alt="Logo" style="width: 100px; height: 100px;" /></button></div>
        
-
+         </a>
 
   <a href="bubbles=).html">
   <img src="bubbles=).png" alt="Logo" style="width: 100px; height: 100px;" />

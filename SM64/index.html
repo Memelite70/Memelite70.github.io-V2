@@ -20,24 +20,21 @@
     <script>
       alert("CONTROLS; A - X, B - C, L - Q, Z - Space, C-Stick - WASD ");
     </script>
-    <head>
-  <style>
-    #reloadBtn {
+    <style>
+	#redirect {
       position: fixed;
       bottom: 10px;
       left: 10px;
     }
-  </style>
-</head>
-<body>
-  <button id="reloadBtn"><image src="/img/DAC96524-23D1-4D33-B8DF-343E62276EB4.png" class="button1" style="width: 75px; height: 75px;" ></image></button>
+</style>
+    <button id="redirect" onclick="goToHomePage()"><image src="/img/DAC96524-23D1-4D33-B8DF-343E62276EB4.png" class="button1" style="width: 100px; height: 100px;" ></image></button>
 
-  <script>
-    document.getElementById('reloadBtn').addEventListener('click', function() {
-      location.reload();
-    });
-  </script>
-    <style>
+<script>
+function goToHomePage() {
+  window.location.href = '//' + window.location.hostname;
+}
+</script>
+<style>
       body,
       html {
         background-color: #000000;

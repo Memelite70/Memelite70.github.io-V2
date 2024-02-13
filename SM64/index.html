@@ -20,6 +20,23 @@
     <script>
       alert("CONTROLS; A - X, B - C, L - Q, Z - Space, C-Stick - WASD ");
     </script>
+    <head>
+  <style>
+    #reloadBtn {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <button id="reloadBtn"><image src="/img/DAC96524-23D1-4D33-B8DF-343E62276EB4.png" class="button1" style="width: 75px; height: 75px;" ></image></button>
+
+  <script>
+    document.getElementById('reloadBtn').addEventListener('click', function() {
+      location.reload();
+    });
+  </script>
     <style>
       body,
       html {

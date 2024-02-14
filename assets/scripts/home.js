@@ -8,7 +8,7 @@ try {
 
 if (!inFrame && !navigator.userAgent.includes('Firefox')) {
   const popup = open('about:blank', '_blank')
-  if (!popup || popup.closed) than (window.confirm('Enable Popups to continue. Click "OK" when popups are turned on. ')) 
+  if (!popup || popup.closed) window.confirm('Enable Popups to continue. Click "OK" when popups are turned on. ') 
 {
 window.location.href= "//" + window.location.hostname;
 };

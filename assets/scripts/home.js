@@ -8,17 +8,14 @@ try {
 
 if (!inFrame && !navigator.userAgent.includes('Firefox')) {
   const popup = open('about:blank', '_blank')
-  if (!popup || popup.closed) window.confirm('Enable Popups to continue. Click "OK" when popups are turned on. ') 
-{
-window.location.href= "//" + window.location.hostname;
-};
+  if (!popup || popup.closed) location.replace(location.href);
   else {
     const doc = popup.document
     const iframe = doc.createElement('iframe')
     const style = iframe.style
     const link = doc.createElement('link')
 
-    const name = localStorage.getItem('name') || 'Home - Google Drive'
+    const name = localStorage.getItem('name') || 'My Drive - Google Drive'
     const icon = localStorage.getItem('icon') || 'https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png'
 
     doc.title = name
@@ -33,7 +30,7 @@ window.location.href= "//" + window.location.hostname;
 
     doc.head.appendChild(link)
     doc.body.appendChild(iframe)
-    location.replace(localStorage.getItem('panicLink') || 'https://clever.com/in/icsd?skip=1&specify_auth=google')
+    location.replace(localStorage.getItem('panicLink') || 'https://clever.com')
   }
 }
 

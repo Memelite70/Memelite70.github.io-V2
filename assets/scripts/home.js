@@ -8,7 +8,7 @@ try {
 
 if (!inFrame && !navigator.userAgent.includes('Firefox')) {
   const popup = open('about:blank', '_blank')
-  if (!popup || popup.closed) setTimeout(() => { location.replace(location.href); }, 2000);
+  if (!popup || popup.closed) setTimeout(() => { location.replace(location.href); }, 500);
   else {
     const doc = popup.document
     const iframe = doc.createElement('iframe')

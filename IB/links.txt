@@ -1,0 +1,2 @@
+https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@25ea1da0fd27d58c36d0e4b21ae1e18405ea1244/build/id-br/ibo.xml
+https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@25ea1da0fd27d58c36d0e4b21ae1e18405ea1244/build/id-br/ibo.xml

@@ -1,62 +1,29 @@
-    <center>
-	    <title>Core Ball - Geometry Tryhard</title>
-	    <link rel="stylesheet" href="gs.css">
-
-    	      
-	    <button class="button" onclick="openFullscreen();"> Full Screen </button>
-
-<style>
-	#redirect {
-      position: fixed;
-      bottom: 10px;
-      left: 10px;
-    }
-</style>
-		       
-	       
-	
-<script>
-        function create() {
-            var url = document.getElementById('input').value;
-            var win = window.open();
-            win.document.body.style.margin = '0';
-            win.document.body.style.height = '100vh';
-            var iframe = win.document.createElement('iframe');
-            iframe.style.border = 'none';
-            iframe.style.width = '100%';
-            iframe.style.height = '100%';
-            iframe.style.margin = '0';
-            iframe.src = url;
-            win.document.body.appendChild(iframe);
-        }
-        </script>
-        <input type="hidden" value=gameframe.html placeholder="https://lsmdm.tk" id='input' autofocus>
-        <button class="button" onclick='create()'>Open Cloaked</button></div>
-     
-<button id="redirect" onclick="goToHomePage()"><image src="/img/DAC96524-23D1-4D33-B8DF-343E62276EB4.png" class="button1" style="width: 100px; height: 100px;" ></image></button>
-
-<script>
-function goToHomePage() {
-  window.location.href = '//' + window.location.hostname;
-}
-</script>
-      <div>
-<iframe class="gm-iframe" id="gm-area" src="gameframe.html" width="940" height="640" scrolling="none" frameborder="0" allowfullscreen></iframe>
-	       <div style="padding-top: 10px;padding-bottom: 10px;"  class="container" align="Center">     <script>
-	    var elem = document.getElementById("gm-area");
-	    function openFullscreen() {
-	      if (elem.requestFullscreen) {
-	        elem.requestFullscreen();
-	      } else if (elem.webkitRequestFullscreen) { /* Safari */
-	        elem.webkitRequestFullscreen();
-	      } else if (elem.msRequestFullscreen) { /* IE11 */
-	        elem.msRequestFullscreen();
-	      }
-	    }
-	    </script>
-		       </div>
-	
-
-</a>
-
-	    </center>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Core Ball</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="game.embed/style.css" />
+  </head>
+  <body>
+    <canvas style="display: none;" id="stage"></canvas>
+    <div id="begin">
+      <section class="center-box">
+        <span class="title">Core Ball</span>
+        <div class="button">
+          <div id="txtAr">▶</div>
+          <div class="text"></div>
+        </div>
+        <div class="op">
+          <span id="btnFW"></span>
+          <span id="btnReset"></span>
+          <div id="tip"></div>
+        </div>
+      </section>
+      <section id="wxArrow"></section>
+    </div>
+    <script type="text/javascript" src="game.embed/index.js"></script>
+    
+  </body>
+</html>

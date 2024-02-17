@@ -22,6 +22,19 @@
       };
     </script>
     <script src="UnityLoader.js"></script>
-    <script src="/js/main.js"></script>
+        <style>
+	#redirect {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+    }
+</style>
+    <button id="redirect" onclick="goToHomePage()"><image src="/img/DAC96524-23D1-4D33-B8DF-343E62276EB4.png" class="button1" style="width: 75px; height: 75px;" ></image></button>
+
+<script>
+function goToHomePage() {
+  window.location.href = '//' + window.location.hostname;
+}
+</script>
   </body>
 </html>

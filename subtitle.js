@@ -4,7 +4,9 @@ function getRandomGreeting() {
     "I spent too much time making these",
     "no free vbux here.",
     "aw I wanted free v-bucks:(",
-  "Stolen from 3kh0, fair and square."
+  "Stolen from 3kh0, fair and square.",
+    "No more boredom at school (unless you get your computer taken)",
+    "1 in 100",
     
   ];
   var randomIndex = Math.floor(Math.random() * greetings.length);

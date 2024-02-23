@@ -72,4 +72,8 @@ snail bob 2
 
 https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/8c491f21-7353-4f1f-b2a0-9544824c4d28%2Fsnail_bob_2.xml
 
+snail bob 3
+
+https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fsnail-bob-3.xml
+
 more links in  game folders (if u somehow found this on the website, not github) at https://github.com/Memelite70/geometry/tree/main

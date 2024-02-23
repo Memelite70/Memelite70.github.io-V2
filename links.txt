@@ -10,9 +10,17 @@ snow rider
 
 https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/debugactions@6e97a528bfcdd0623e0cd99ad352baebf47a6b70/sr3d2.xml
 
+https://book-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/debugactions@6e97a528bfcdd0623e0cd99ad352baebf47a6b70/sr3d2.xml
+
+https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/debugactions@6e97a528bfcdd0623e0cd99ad352baebf47a6b70/sr3d2.xml
+
 pizza tower
 
 https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://184025835-163385710482638103.preview.editmysite.com/uploads/b/139890129-716705991685705292/files/pztr.xml
+
+https://book-opensocial.googleusercontent.com/gadgets/ifr?url=https://184025835-163385710482638103.preview.editmysite.com/uploads/b/139890129-716705991685705292/files/pztr.xml
+
+https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://184025835-163385710482638103.preview.editmysite.com/uploads/b/139890129-716705991685705292/files/pztr.xml
 
 1v1 lol select
 
@@ -30,18 +38,26 @@ idle breakout
 
 https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@25ea1da0fd27d58c36d0e4b21ae1e18405ea1244/build/id-br/ibo.xml
 
-https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@25ea1da0fd27d58c36d0e4b21ae1e18405ea1244/build/id-br/ibo.xml
-
 https://book-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@25ea1da0fd27d58c36d0e4b21ae1e18405ea1244/build/id-br/ibo.xml
+
+https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@25ea1da0fd27d58c36d0e4b21ae1e18405ea1244/build/id-br/ibo.xml
 
 retro bowl
 
-https://book-opensocial.googleusercontent.com/gadgets/ifr?url=https://274079163-174037128449362058.preview.editmysite.com/uploads/b/139890129-899796311729593176/files/rtbl.xml
-
 https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://274079163-174037128449362058.preview.editmysite.com/uploads/b/139890129-899796311729593176/files/rtbl.xml
+
+https://book-opensocial.googleusercontent.com/gadgets/ifr?url=https://274079163-174037128449362058.preview.editmysite.com/uploads/b/139890129-899796311729593176/files/rtbl.xml
 
 https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://274079163-174037128449362058.preview.editmysite.com/uploads/b/139890129-899796311729593176/files/rtbl.xml
 
 https://vtn5c31dcjtimmb9o2lm882bk13i56hh-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=https://274079163-174037128449362058.preview.editmysite.com/uploads/b/139890129-899796311729593176/files/rtbl.xml&container=enterprise&view=default&lang=en&country=ALL&sanitize=0&v=afedeabb2fce9b51&libs=core&mid=88&parent=https://sites.google.com/site/unblockedgame76/retrobowl#st=e%3DAIHE3cA1zgmQ7PKxlx7gtXV8Ub9dOexMzGOvLpmP90ETyaA0SJuy%252F%252FHkPGbYwCvaGPhFsAdc7rRc6%252BybvNKZAUCjKAd4wrUvwKDuBOb6QApVN9bfKbiXPEm48GiSwjjxDyoReMGHB3Wg%26c%3Denterprise&rpctoken=2316186717334572930
+
+jacksmith
+
+https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fjacksmith.xml
+
+https://book-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fjacksmith.xml
+
+https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fjacksmith.xml
 
 more links in  game folders (if u somehow found this on the website, not github) at https://github.com/Memelite70/geometry/tree/main

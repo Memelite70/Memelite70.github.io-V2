@@ -18,7 +18,7 @@ if (!window.config.unityWebglLoaderUrl) {
           window.config.unityWebglLoaderUrl ="UnityLoader.js";
     // switch (year) {
     //     case "2019":
-    //         window.config.unityWebglLoaderUrl = 1 === minor ? "./UnityLoader.2019.1.js" : "./UnityLoader.2019.2.js";
+    //         window.config.unityWebglLoaderUrl = 1 === minor ? "UnityLoader.2019.1.js" : "UnityLoader.2019.2.js";
     //         break;
     //     default:
     //         window.config.unityWebglLoaderUrl = "https://game-cdn.poki.com/loaders/v2/unity/static/UnityLoader.js"

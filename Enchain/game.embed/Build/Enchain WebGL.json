@@ -1,0 +1,13 @@
+{
+"companyName": "Power Spark Games",
+"productName": "Enchain",
+"dataUrl": "Enchain WebGL.data.unityweb",
+"asmCodeUrl": "Enchain WebGL.asm.code.unityweb",
+"asmMemoryUrl": "Enchain WebGL.asm.memory.unityweb",
+"asmFrameworkUrl": "Enchain WebGL.asm.framework.unityweb",
+"TOTAL_MEMORY": 536870912,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000"
+}

@@ -54,7 +54,13 @@ gaiety, binge, reveling, time killer, gambol, whoopee" >
 
     <div>
     <title>Geometry Tryhard</title>
-      
+      <script>
+        var visited = localStorage.getItem('visited');
+if (!visited) {
+  alert("By continuing, you accept the usage of cookies. Who doesn't like free cookies?");
+  localStorage.setItem('visited', true);
+}
+      </script>
     <div class="topnav">
   <a class="active" href="index.html/">Home</a>
   <a href="games.html">Games</a>

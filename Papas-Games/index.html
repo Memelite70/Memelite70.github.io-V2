@@ -1,62 +1,91 @@
-    <center>
-	    <title>Papa's Games - Geometry Tryhard</title>
-	    <link rel="stylesheet" href="/game.css">
+<title>Papa's Games - All 17</title>
+<center><p>Papa's Games</p>
+<div id="row1">
+  <a href="embed.html?game=SWF-FILES/PapasBurgeria.swf" title="Papa's Burgeria">
+    <image src="img/2-1.png" alt="Logo" style="width: 200px; height: 200px;"/>
+  </a>
+    <a href="embed.html?game=SWF-FILES/PapasTacomia.swf" title="Papa's Tacomia">
+    <image src="img/2-0.png" alt="Logo" style="width: 200px; height: 200px;"/>
+  </a>
+    <a href="embed.html?game=SWF-FILES/PapasFreezeria.swf" title="Papa's Freezeria">
+    <image src="img/1-10.png" alt="Logo" style="width: 200px; height: 200px;"/>
+  </a>
+  <a href="embed.html?game=SWF-FILES/PapasBurgeria.swf" title="Papa's Burgeria">
+    <image src="img/2-1.png" alt="Logo" style="width: 200px; height: 200px;"/>
+  </a>
+    <a href="embed.html?game=SWF-FILES/PapasScooperia.swf" title="Papa's Scooperia">
+    <image src="img/1-1.png" alt="Logo" style="width: 200px; height: 200px;"/>
+  </a>
+</div>
+  <div style="cursor: pointer; position: fixed; border-radius: 15px; color: rgb(224, 224, 224); background-color: #1d1d1dc0; left: 0; bottom: 0px; margin: 10px;" id="Menu">
 
-    	      
-	    <button class="button" onclick="openFullscreen();"> Full Screen </button>
 
-<style>
-	#redirect {
-      position: fixed;
-      bottom: 10px;
-      left: 10px;
+  <span class="material-icons buttonForMenu" style="margin: 5px;" onclick="window.location = '//' + window.location.hostname + '/games.html'" >
+    arrow_back
+    </span>
+    <span class="material-icons buttonForMenu" style="margin: 5px;" onclick="makeFullScreen()" >
+      fullscreen
+      </span>
+  </div>
+	  <script>
+
+var isFUll = false
+
+document.body.onkeyup = function(e) {
+  if( e.keyCode == 27 ) {
+    if(isFUll) {
+    //document.getElementById('game').style.width = '800px';
     }
-</style>
-		       
-	       
-	
-<script>
-        function create() {
-            var url = document.getElementById('input').value;
-            var win = window.open();
-            win.document.body.style.margin = '0';
-            win.document.body.style.height = '100vh';
-            var iframe = win.document.createElement('iframe');
-            iframe.style.border = 'none';
-            iframe.style.width = '100%';
-            iframe.style.height = '100%';
-            iframe.style.margin = '0';
-            iframe.src = url;
-            win.document.body.appendChild(iframe);
-        }
-        </script>
-        <input type="hidden" value=game.embed/index.html placeholder="https://lsmdm.tk" id='input' autofocus>
-        <button class="button" onclick='create()'>Open Cloaked</button></div>
-     
-
-      <div>
-<iframe class="gm-iframe" id="gm-area" src="game.embed/index.html" width="940" height="640" scrolling="none" frameborder="0" allowfullscreen></iframe>
-	       <div style="padding-top: 10px;padding-bottom: 10px;"  class="container" align="Center">     <script>
-	    var elem = document.getElementById("gm-area");
-	    function openFullscreen() {
-	      if (elem.requestFullscreen) {
-	        elem.requestFullscreen();
-	      } else if (elem.webkitRequestFullscreen) { /* Safari */
-	        elem.webkitRequestFullscreen();
-	      } else if (elem.msRequestFullscreen) { /* IE11 */
-	        elem.msRequestFullscreen();
-	      }
-	    }
-	    </script>
-		       </div>
-	
-
-</a>
-<button id="redirect" onclick="goToHomePage()"><image src="/img/DAC96524-23D1-4D33-B8DF-343E62276EB4.png" class="button1" style="width: 100px; height: 100px;" ></image></button>
-
-<script>
-function goToHomePage() {
-  window.location.href = '//' + window.location.hostname;
+  }
 }
-</script>
-	    </center>
+
+function requestFullScreen(element) {
+    // Supports most browsers and their versions.
+    var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullscreen;
+    
+    if (requestMethod) { // Native full screen.
+        requestMethod.call(element);
+        let hh = window.innerHeight;
+
+document.getElementById('game').height = hh;
+    } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
+        var wscript = new ActiveXObject("WScript.Shell");
+        if (wscript !== null) {
+            wscript.SendKeys("{F11}");
+        }
+    }
+}
+var canvas = document.getElementById('hello');
+
+function makeFullScreen() {
+
+    isFUll = true
+    requestFullScreen(canvas);
+}
+
+
+let hh = window.innerHeight;
+
+document.getElementById('game').height = hh;
+
+
+document.getElementById('game').height = hh;
+window.onresize = function(event) {
+  let hh = window.innerHeight;
+
+document.getElementById('game').height = hh;
+}
+var textElement = document.getElementById("game");
+
+// Get the current URL
+var currentUrl = new URL(window.location.href);
+
+// Check for the presence of the "text" parameter in the URL
+if (currentUrl.searchParams.has("game")) {
+  // Set the text of the element to the value of the "text" parameter
+  textElement.src = currentUrl.searchParams.get("game");
+}
+
+  </script>
+  
+</center>

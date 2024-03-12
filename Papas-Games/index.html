@@ -113,65 +113,6 @@ body {
     </span>
     
   </div>
-	  <script>
 
-var isFUll = false
-
-document.body.onkeyup = function(e) {
-  if( e.keyCode == 27 ) {
-    if(isFUll) {
-    //document.getElementById('game').style.width = '800px';
-    }
-  }
-}
-
-function requestFullScreen(element) {
-    // Supports most browsers and their versions.
-    var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullscreen;
-    
-    if (requestMethod) { // Native full screen.
-        requestMethod.call(element);
-        let hh = window.innerHeight;
-
-document.getElementById('game').height = hh;
-    } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
-        var wscript = new ActiveXObject("WScript.Shell");
-        if (wscript !== null) {
-            wscript.SendKeys("{F11}");
-        }
-    }
-}
-var canvas = document.getElementById('hello');
-
-function makeFullScreen() {
-
-    isFUll = true
-    requestFullScreen(canvas);
-}
-
-
-let hh = window.innerHeight;
-
-document.getElementById('game').height = hh;
-
-
-document.getElementById('game').height = hh;
-window.onresize = function(event) {
-  let hh = window.innerHeight;
-
-document.getElementById('game').height = hh;
-}
-var textElement = document.getElementById("game");
-
-// Get the current URL
-var currentUrl = new URL(window.location.href);
-
-// Check for the presence of the "text" parameter in the URL
-if (currentUrl.searchParams.has("game")) {
-  // Set the text of the element to the value of the "text" parameter
-  textElement.src = currentUrl.searchParams.get("game");
-}
-
-  </script>
   
 </center>

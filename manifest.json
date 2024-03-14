@@ -1,10 +1,10 @@
 {
-    "name": "Ruffle",
-    "short_name": "Ruffle",
-    "start_url": "index.html",
-    "theme_color": "#262626",
-    "background_color": "#424242",
-    "display": "standalone",
-    "orientation": "portrait"
-    
+  "manifest_version": 3,
+  "name": "Geometry Tryhard",
+  "description": "Chrome Extension for Geometry Tryhard",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "logo.jpeg"
+  }
 }

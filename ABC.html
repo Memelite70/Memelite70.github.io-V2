@@ -10,6 +10,12 @@
         function create() {
             var url = document.getElementById('input').value;
             var win = window.open();
+             const name = localStorage.getItem('name') || 'My Drive - Google Drive'
+    const icon = localStorage.getItem('icon') || 'https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png'
+
+    doc.title = name
+    link.rel = 'icon'
+    link.href = icon
             win.document.body.style.margin = '0';
             win.document.body.style.height = '100vh';
             var iframe = win.document.createElement('iframe');

@@ -45,8 +45,20 @@ if (_params['exp_rpc_js'] != 1) {
     </div>
     <script crossorigin="anonymous" src="https://112024093-351892247949035127.preview.editmysite.com/uploads/b/7547235-238727784559188382/files/webapp/source_min.js" type="text/javascript"></script>
     <script crossorigin="anonymous" src="https://112024093-351892247949035127.preview.editmysite.com/uploads/b/7547235-238727784559188382/files/webapp/index.js" type="text/javascript"></script>
-	<script src="https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/addc4348-16c2-4645-9dff-f99b962e39ef%2Fscr.js"></script>
+	<style>
+	#redirect {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+    }
+</style>
+    <button id="redirect" onclick="goToHomePage()"><image src="/img/DAC96524-23D1-4D33-B8DF-343E62276EB4.png" class="button1" style="width: 75px; height: 75px;" ></image></button>
 
+<script>
+function goToHomePage() {
+  window.location.href = '//' + window.location.hostname;
+}
+</script>
 
 <script>gadgets.util.runOnLoadHandlers();</script><script>window.google.csi.tickDl();
 </script></body></html>

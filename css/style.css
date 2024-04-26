@@ -272,7 +272,7 @@ footer {
 }
 
 .game-image {
-  background: var(--theme);
+  background: rgba(0,255,48,1);
   object-fit: cover;
   height: 200px;
   width: 200px;
@@ -286,7 +286,7 @@ footer {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: var(--text-secondary);
+  color: #ffffff;
   padding: 0 10px;
   font-size: 18px;
 }

@@ -20,6 +20,7 @@ h1 {
 background: linear-gradient(90deg, rgba(0,242,255,1) 0%, rgba(0,242,255,1) 100%);
   overflow: hidden;
   border-radius: 50px;
+  position: sticky;
 }
 
 /* Style the links inside the navigation bar */

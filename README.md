@@ -5,3 +5,4 @@ If you wish to fork from the latest version (Not recommended), you need to fork 
 dev notes- happywheels Z, hexgl Z , csgo Z embed, doodle Z embed, murder Z embed, basketball stars, tetris Z embed, cut the rope Z embed, happy wheels Z, goog snake Z, goog dino Z, minesweeper, raft 1 Z, raft 2 Z,(14/14)
 
 [![forthebadge](https://forthebadge.com/images/featured/featured-gluten-free.svg)](https://forthebadge.com)           [![forthebadge](https://forthebadge.com/images/featured/featured-powered-by-electricity.svg)](https://forthebadge.com)           [![forthebadge](https://forthebadge.com/images/featured/featured-made-with-crayons.svg)](https://forthebadge.com)
+ApplePie and ApplePatty - you need to buy a website, or remove the replit.com link and deploy to regular github pages for this to work at applepieandapplepatty.github.io/YESs.github.io, in  addition to forking the repls above.

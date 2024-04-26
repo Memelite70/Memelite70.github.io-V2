@@ -32,7 +32,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: var(--background);
+  background: black;
 }
 
 @keyframes breathing {
@@ -272,7 +272,7 @@ footer {
 }
 
 .game-image {
-  background: rgba(0,255,48,1);
+  background: #00cfd6;
   object-fit: cover;
   height: 200px;
   width: 200px;

@@ -26,6 +26,44 @@ html {
   user-select: none;
 }
 
+.topnav {
+   background: rgb(0,255,48);
+background: linear-gradient(90deg, rgba(0,242,255,1) 0%, rgba(0,242,255,1) 100%);
+  overflow: hidden;
+  border-radius: 50px;
+  position: sticky;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 17px;
+  border-radius: 50px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-image: linear-gradient(90deg, #00cfd6, #00cfd6);
+  color: rgb(255, 255, 255);
+}
+
+.topnav a {
+  transition-duration: 0.4s;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: linear-gradient(90deg, rgba(0,255,48,1) 0%, rgba(0,242,255,1) 100%);
+  background: white;
+  color: black;
+  border-radius: 50px;
+}
+
 body {
   margin: 0;
   padding: 0;

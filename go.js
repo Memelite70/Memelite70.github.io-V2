@@ -10,7 +10,7 @@ if (!inFrame && !navigator.userAgent.includes("Firefox")) {
   const popup = open("about:blank", "_blank")
   if (!popup || popup.closed) {
     alert('If you wish to automatically cloak everytime you enter this website, enable popups.');
-    window.location="go.html";
+    window.location="googsites.html";
   } else {
     const doc = popup.document
     const iframe = doc.createElement("iframe")

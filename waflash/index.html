@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
     <script>
       var baseUrl = window.location.href.split("waflash")[0];
-      var swfUrl = baseUrl + "waflash/swf/" + (getParameterByName("swf") || "");
+      var swfUrl = baseUrl + (getParameterByName("swf") || "");
       var gameConfig = {
         swfUrl,
       };

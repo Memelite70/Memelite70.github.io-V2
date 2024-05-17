@@ -122,3 +122,8 @@ img:hover {
 
 html { height: 100%; background: #000; display: flex; }
 body { margin: auto; }
+  	#redirect {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+    }

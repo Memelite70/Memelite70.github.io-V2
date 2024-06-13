@@ -1,127 +1,199 @@
-body {
-  background: black
+.games {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  justify-content: space-between;
+  grid-gap: 2rem;
+  margin: 1rem 2rem 2rem 2rem;
+  background: linear-gradient(60deg, #000000 0%, #143C21 100%);
 }
 
-p {
-  font-family: verdana;
-  font-size: 40px;
-  color: #ffffff
+.game {
+  height: 240px;
+  width: 200px;
+
+  text-decoration: none;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  -webkit-user-select: none;
+  user-select: none;
+  position: relative;
+  transition: transform 0.1s;
 }
 
-h1 {
+.game:hover {
+  transform: scale(0.925);
+}
+
+.game[hidden] {
+  display: none;
+}
+
+.game-image {
+  background: #143C21;
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
+  border-radius: 15px 15px 0 0;
+}
+
+.game-text {
+  line-height: 40px;
+  width: 200px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #ffffff;
+  padding: 0 10px;
+  font-size: 18px;
+}
+  h1 {
   font-family: monospace;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 28px;
+}
+p {
+  font-family: monospace;
+  color: #ffffff;
+  font-size: 18px;
+}
+h2 {
+  font-family: monospace;
+  color: #ffffff;
+  font-size: 34px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background: linear-gradient(60deg, #000000 0%, #143C21 100%);}
+.button {
+  float: center;
+  color: #1cc49d;
+
+  background-color: #1b2f31;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  width: 8em;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition-duration: 0.3s;
+  margin: 4px 2px;
 }
 
-/* Add a black background color to the top navigation */
+.button:hover {
+  color: #1b2f31;
+  background-color: #1cc49d;
+  font-size: 16.5px; 
+  font-weight: 700;
+  transition-duration: 0.3s; 
+}
+
 .topnav {
-   background: rgb(0,255,48);
-background: linear-gradient(90deg, rgba(0,242,255,1) 0%, rgba(0,242,255,1) 100%);
+   background: #1b2f31;
+background: linear-gradient(90deg, #000000 0%, #1b2f31) 100%);
   overflow: hidden;
   border-radius: 50px;
   position: sticky;
 }
-
-/* Style the links inside the navigation bar */
-.topnav a {
+.topnav a{
   float: left;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: monospace;
-  font-size: 17px;
+  color: #1cc49d;
+  background-color: #1b2f31;
   border-radius: 50px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-image: linear-gradient(90deg, #00cfd6, #00cfd6);
-  color: rgb(255, 255, 255);
-}
-
-.topnav a {
-  transition-duration: 0.4s;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: linear-gradient(90deg, rgba(0,255,48,1) 0%, rgba(0,242,255,1) 100%);
-  background: white;
-  color: black;
-  border-radius: 50px;
-}
-
-@font-face {
-  font-family: "Monocode";
-    src: url("Monocode-Regular-V01.02b.ttf") format("truetype");
-}
-
-.button {
-   background-image: linear-gradient(90deg, rgba(0,242,255,1) 0%, rgba(0,242,255,1) 100%);
-   padding: 15px 32px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   margin: 4px 2px;
-   cursor: pointer;
-   border-radius: 50px;
-   font-family: monospace;
-   font-size: 20px;
-   background-color: black;
-   color: black;
- }
-
- .button {
-   transition-duration: 0.4s;
- }
-
-
-.button1 {
-  background-color: white;
-  background-image: linear-gradient(90deg, rgba(0,242,255,1) 0%, rgba(0,242,255,1) 100%);
-  color: black; 
-  border: 2px solid #4CAF50;
-}
-
-.button:hover {
- color: white;
-  background-image: linear-gradient(90deg, #00cfd6, #00cfd6);
-font-size: 28px;
-  
-.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  width: 80vw;
-  margin: 0 auto;
-  min-height: 100vh;
+  height: 3em;
+  width: 8em;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+
+
 }
-
-img {
-  transition-duration: 0.8s;
+.topnav a{transition-duration: 0.3s}
+.topnav a:hover {
+    color: #1b2f31;
+  background-color: #1cc49d;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  width: 8em;
+  text-decoration: none;
+ font-size: 16.5px;
+  font-weight: 700;
 }
+.topnav a.active{
+  color: #1b2f31;
+  background-color: #1cc49d;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  width: 8em;
+  text-decoration: none;
+ font-size: 16px;
+  font-weight: 700;
+}
+.topnav a.active:hover{
+  color: #1b2f31;
+  background-color: #1cc49d;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  width: 8em;
+  text-decoration: none;
+ font-size: 16.5px;
+  font-weight: 700;
+}
+.topnav a:hover{
+  float: left;
+  color: #1cc49d;
+  background-color: #1b2f31;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  width: 8em;
+  text-decoration: none;
+  font-size: 16.5px;
+  font-weight: 600;
+}
+li {
+  font-family: monospace;
+  color: #ffffff;
+  font-size: 16px;
 
 
-.btn {
-  flex: 1 1 auto;
-  margin: 10px;
-  padding: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
- /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
-  box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
- }
+}
+.topnav button{
+  float: left;
+  color: #1cc49d;
+  background-color: #1b2f31;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  width: 8em;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
 
-body{
-  font-family: 'Montserrat', sans-serif;
-  margin:0;
+
 }

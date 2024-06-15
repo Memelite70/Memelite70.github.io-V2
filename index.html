@@ -57,13 +57,38 @@ gaiety, binge, reveling, time killer, gambol, whoopee" >
 
     <div>
     <title>Geometry Tryhard</title>
-      <script>
-        var visited = localStorage.getItem('visited');
-if (!visited) {
-  alert("By continuing, you accept the usage of cookies in order to store game data. Who doesn't like free cookies?");
-  localStorage.setItem('visited', true);
+
+         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<style>
+@media (min-width: 32em) {
+  .cc-window.cc-banner {
+    padding: 1.5em 1.8em
+  }
+  .cc-message {
+    font-size: 0.9em;
+    line-height: 1.4
+  }
+  .cc-compliance {
+    padding-left: 4em
+  }
 }
-      </script>
+</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.cookieconsent.initialise({
+ cookie: {
+    domain : "/",
+    name: "cookie_consent",
+  },
+  palette:{
+    popup:  { background: "#1b2f31"  },
+    button: { background: "#1cc49d"},
+  },
+  content:{
+    message: "We use cookies to offer you a better experience and analyze site traffic. If you continue to use this site, you consent to our use of cookies.",
+  },
+});
+</script>
     <div class="topnav">
    <a class="active" href="index.html">Home</a>
   <a href="games.html">Games</a>

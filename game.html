@@ -8,9 +8,9 @@
      crossorigin="anonymous"></script>
 </head>
 <body onload="load()">
-<
+
 <!-- Button to trigger iframe loading -->
-<center><div id="topnav"><button class="button" id="loadIframeBtn">Load Game</button><p>&nbsp;</p>
+<center>
 <button class="button" onclick='create()'>Open Cloaked</button><button class="button" onclick="openFullscreen();">Full Screen</button></div><script>
 	    
 	    function openFullscreen() {
@@ -101,6 +101,7 @@ document.getElementById('loadIframeBtn').addEventListener('click', loadGameIfram
     }
 </style>
     <button id="redirect" onclick="goToHomePage()"><h1>GO BACK</h1></button>
+    <div id="reloadGame"><center><button class="button" onclick="load()">Reload Game</button></center></div>
     <script>
 function goToHomePage() {
   window.location.href = '//' + window.location.hostname + "/games.html";

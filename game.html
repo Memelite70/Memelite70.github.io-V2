@@ -7,8 +7,8 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9797604980960415"
      crossorigin="anonymous"></script>
 </head>
-<body>
-
+<body onload="load()">
+<
 <!-- Button to trigger iframe loading -->
 <center><div id="topnav"><button class="button" id="loadIframeBtn">Load Game</button><p>&nbsp;</p>
 <button class="button" onclick='create()'>Open Cloaked</button><button class="button" onclick="openFullscreen();">Full Screen</button></div><script>
@@ -24,7 +24,12 @@
 	      }
 	    }
 	    </script><script>
-        
+		    function load(){
+			    var load = document.getElementById("game");
+			    load.src = getUrlParameter('game');
+		    }
+			    
+			
         function create() {
            
             var win = window.open();

@@ -9,7 +9,7 @@
 </head>
 <body onload="load()">
 
-<!-- Button to trigger iframe loading -->
+<!-- Misc. buttons -->
 <center>
 <button class="button" onclick='create()'>Open Cloaked</button><button class="button" onclick="openFullscreen();">Full Screen</button></div><script>
 	    
@@ -24,6 +24,7 @@
 	      }
 	    }
 	    </script><script>
+		    //load code (new)
 		    function load(){
 			    var load = document.getElementById("game");
 			    load.src = getUrlParameter('game');
@@ -31,7 +32,7 @@
 			    
 			
         function create() {
-           
+           //cloaker
             var win = window.open();
             win.document.body.style.margin = '0';
             win.document.body.style.height = '100vh';
@@ -71,7 +72,7 @@
 </script></center>
 
 <script>
-// Function to get URL parameter value by name
+// URL param get
 function getUrlParameter(name) {
     name = name.replace(/[[]/, '\$$[').replace(/[]$$]/, '\\]');
     var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
@@ -79,7 +80,7 @@ function getUrlParameter(name) {
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 };
 
-// Function to load iframe with URL parameter value
+// Old broken load code
 function loadGameIframe() {
     var gameParam = getUrlParameter('game');
     var iframe = document.getElementById('game');
@@ -89,11 +90,13 @@ function loadGameIframe() {
 	openFullscreen();
 };
 
-// Event listener for button click to load iframe
+//button code for old loader
 document.getElementById('loadIframeBtn').addEventListener('click', loadGameIframe);
 </script>
 <link rel="stylesheet" href="../style.css">
+	<!--redirect button style location-->
 <style>
+	
 	#redirect {
       position: fixed;
       bottom: 10px;
@@ -103,10 +106,12 @@ document.getElementById('loadIframeBtn').addEventListener('click', loadGameIfram
     <button id="redirect" onclick="goToHomePage()"><h1>GO BACK</h1></button>
     <div id="reloadGame"><center><button class="button" onclick="load()">Reload Game</button></center></div>
     <script>
+	    //redirect
 function goToHomePage() {
   window.location.href = '//' + window.location.hostname + "/games.html";
 }
 </script>
+	<!--Spacers-->
 <p>&nbsp;</p>
 <p>&nbsp;</p>
     
